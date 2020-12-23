@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+.bg_image{
+  background-image: url('./pinkmarble.jpg');
+  background-size: cover;
+  height: auto;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +17,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.border {  border: 5px solid black; } 
 
 .App-header {
   background-color: #282c34;

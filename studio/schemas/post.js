@@ -29,6 +29,8 @@ export default {
       type: 'image',
       options: {
         hotspot: true,
+
+
       },
     },
     {
@@ -47,6 +49,19 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
+    {
+      name: 'bodyPortableText',
+      type: 'array',
+      title: 'Body',
+      of: [
+          {
+            type: 'block'
+          },
+          {
+            type: 'youtube'
+          }
+  ]
+    }
   ],
 
   preview: {
@@ -55,6 +70,8 @@ export default {
       author: 'author.name',
       media: 'mainImage',
     },
+
+    
     prepare(selection) {
       const {author} = selection
       return Object.assign({}, selection, {
