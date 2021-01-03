@@ -2,24 +2,12 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import image from "../pinkmarble.jpg"
 import sanityClient from "../client.js";
-import getYouTubeId from 'get-youtube-id'
-import YouTube from 'react-youtube'
-import PortableText from '@sanity/block-content-to-react'
 export default function Post({blocks}){
 
  
     const [postData, setPost] = useState(null);
-    const serializers = {
-        types: {
-          youtube: ({node}) => {
-            const { url } = node
-            const id = getYouTubeId(url)
-            return (<YouTube videoId={id} />)
-          
-            
-          }
-        }
-    }
+   
+
 
     useEffect(()=>{
         sanityClient
@@ -32,7 +20,7 @@ export default function Post({blocks}){
                         url
                     },
                     alt
-                }
+                },
             }`)
             .then((data)=> setPost(data))
             .catch(console.error);
@@ -54,9 +42,12 @@ export default function Post({blocks}){
                                 alt={post.mainImage.alt}
                                 className= "w-full h-full rounded-r object-cover absolute"
                             />
+                            
+
                             <span className= "block relative h-full flex justify-end items-end pr-4 pb-4">
                                 <h3 className = "text-white text-lg font-blog-bold px-5 py-1 bg-gray-900 text-black bg-opacity-75 rounded">
                                     {post.title}
+                                    
                                 </h3>
                             </span>
                         </span>
@@ -66,7 +57,6 @@ export default function Post({blocks}){
     ))}
                 </div>
             </section>
-            <PortableText blocks={blocks} serializers={serializers} />
         </main>
         
     )

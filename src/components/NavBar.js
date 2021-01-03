@@ -10,7 +10,7 @@ export default function NavBar(){
                     <NavLink to= "/" 
                     exact 
                     activeClassName= "text-white-100"
-                    className= "inline-flex items-center py-6 px-3 mr-4 text-gray-800 hover:text-white text-4xl font-bold cursive tracking-widest"
+                    className= "inline-flex items-center py-6 px-3 mr-4 text-gray-800 hover:text-white text-4xl font-Verdana tracking-widest"
                     > 
                      &#60;DIV&#62;
                     </NavLink>

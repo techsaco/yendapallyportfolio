@@ -1,3 +1,4 @@
+
 export default {
     name: 'project',
     title: 'Project',
@@ -6,6 +7,11 @@ export default {
       {
         name: 'title',
         title: 'Title',
+        type: 'string',
+      },
+      {
+        name: 'title1',
+        title: 'title1',
         type: 'string',
       },
       {
@@ -42,10 +48,13 @@ export default {
         title: 'Published at',
         type: 'datetime',
       },
+     
+      
       {
         name: 'body',
         title: 'Body',
         type: 'blockContent',
+      
       },
     ],
   

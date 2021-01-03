@@ -1,13 +1,21 @@
 export default {
-  name: 'post',
+ name: 'post',
   title: 'Post',
   type: 'document',
   fields: [
+    
     {
       name: 'title',
       title: 'Title',
       type: 'string',
     },
+
+    {
+      name: 'title1',
+      title: 'title1',
+      type: 'string',
+    },
+
     {
       name: 'slug',
       title: 'Slug',
@@ -49,34 +57,26 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
-    {
-      name: 'bodyPortableText',
-      type: 'array',
-      title: 'Body',
-      of: [
-          {
-            type: 'block'
-          },
-          {
-            type: 'youtube'
-          }
-  ]
-    }
-  ],
 
+   
+
+  ],
   preview: {
     select: {
       title: 'title',
       author: 'author.name',
       media: 'mainImage',
+      
+    
     },
 
     
+  },
     prepare(selection) {
       const {author} = selection
       return Object.assign({}, selection, {
         subtitle: author && `by ${author}`,
       })
     },
-  },
+  
 }

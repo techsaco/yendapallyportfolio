@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import sanityClient from "../client.js";
-import image from "../pinkmarble.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import "../App.css";
@@ -10,12 +9,11 @@ function urlFor(source){
     return builder.image(source);
 }
 
-
 export default function About(){
     
     const [author, setAuthor] = useState(null);
 
-    useEffect(() => {
+    useEffect(() => { 
         sanityClient
             .fetch(
                 `*[_type == "author"]{
@@ -39,9 +37,9 @@ export default function About(){
               
                 <section className = "bg_image lg:flex p-40 absolute object-cover w-full h-full ">
                
-                    <img src = {urlFor(author.authorImage).url()} className= "w-32 h-32 lg:w-64 lg:h-64 mr-8 border" alt={author.name}/>
+                    <img src = {urlFor(author.authorImage).url()} className= "w-32 h-64 lg:w-64 lg:h-68 mr-8 border" alt={author.name}/>
                     <div className = "text-lg flex flex-col justify-center">
-                        <h1 className = "cursive text-6xl text-gray-600 mb-4">
+                        <h1 className = "font-Segoe UI text-6xl text-gray-600 mb-4">
                             Hey there. I'm {" "}
                             <span className= "text-black">{author.name}</span>
                         </h1>
