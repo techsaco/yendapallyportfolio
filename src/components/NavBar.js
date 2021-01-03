@@ -1,12 +1,14 @@
 import React from "react"
 import {NavLink} from "react-router-dom"
 import {SocialIcon} from "react-social-icons"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link>
+
 
 export default function NavBar(){
     return (
         <header className= "bg-red-200">
-            <div className= "container mx-auto flex justify-between">
-                <nav >
+            <div class= "relative container mx-auto flex justify-between">
+                <nav className = "relative flex flex-wrap items-center justify-between px-1 py-2 navbar-expand-lg mb-3" >
                     <NavLink to= "/" 
                     exact 
                     activeClassName= "text-white-100"

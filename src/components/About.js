@@ -38,15 +38,15 @@ export default function About(){
               
                 <section className = "bg_image lg:flex p-40 absolute object-cover w-full h-full ">
                
-                    <img src = {urlFor(author.authorImage).url()} className= "w-32 h-64 lg:w-64 lg:h-68 mr-8 border" alt={author.name}/>
+                    <img src = {urlFor(author.authorImage).url()} className= "responsive mr-8 border" alt={author.name}/>
                     <div className = "text-lg flex flex-col justify-center">
-                        <h1 className = "font-Segoe UI text-6xl text-gray-600 mb-4">
+                        <h1 className = "text-lg flex-col justify-center font-Segoe UI text-6xl text-gray-600 mb-6">
                             Hey there. I'm {" "}
                             <span className= "text-black">{author.name}</span>
                         </h1>
                         <div className= "prose lg:prose-xl text-black">
                             <BlockContent blocks = {author.bio} projectId= "m7y80hkd" dataset= "production"/>
-                            <p>  <a href={resume}> View My Resume </a>.</p>
+                            
                         </div>
                     </div>
                 </section>
