@@ -6,6 +6,7 @@ import Post from "./components/Post";
 import Project from "./components/Project";
 import SingleProject from "./components/SingleProject";
 import NavBar from "./components/NavBar";
+import Resume from "./components/Resume"
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Route component = {Post} path = '/post' />
       <Route component = {SingleProject} path = '/project/:slug' />
       <Route component = {Project} path = '/project' />
+      <Route component = {Resume} path = '/resume' />
     </Switch>
   </BrowserRouter>
   );

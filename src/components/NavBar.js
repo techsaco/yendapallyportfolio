@@ -33,6 +33,12 @@ export default function NavBar(){
                         About Me
                     </NavLink>
 
+                    <NavLink to= "/resume"
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white"
+                    activeClassName= "bg-red-300 text-white">
+                        Resume
+                    </NavLink>
+
                 </nav>
                 <div className= "inline-flex py-3 px-3 my-6">
                     <SocialIcon url = "https://www.linkedin.com/in/divya-y-78a3a293/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}}></SocialIcon>

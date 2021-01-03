@@ -3,6 +3,7 @@ import sanityClient from "../client.js";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import "../App.css";
+import resume from "../Yendapally_Divya_Resume.pdf"
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source){
@@ -45,6 +46,7 @@ export default function About(){
                         </h1>
                         <div className= "prose lg:prose-xl text-black">
                             <BlockContent blocks = {author.bio} projectId= "m7y80hkd" dataset= "production"/>
+                            <p>  <a href={resume}> View My Resume </a>.</p>
                         </div>
                     </div>
                 </section>
