@@ -9,30 +9,49 @@ import { Navbar } from 'react-bootstrap';
 export default function NavBar(){
     return (
         
-    <header className= "bg-red-200">
+     <header className= "bg-red-200">
             <div class= "relative container mx-auto flex justify-between">
-        
-        <Navbar collapseOnSelect fixed= 'top' expand='sm' bg='dark' variant = 'dark'>
-            <Container>
-                <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-                <Navbar.Collapse id= 'responsive-navbar-nav'>
-                    <Nav>
-                        <Nav.Link href = '/'> Home </Nav.Link>
-                        <Nav.Link href = '/project'> Project </Nav.Link>
-                        <Nav.Link href = '/post'> Post </Nav.Link>
-                        <Nav.Link href = '/about'> About </Nav.Link>
-                        <Nav.Link href = '/resume'> Resume </Nav.Link>
-                   </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-        
-        <div className= "inline-flex py-3 px-3 my-6">
+                <nav className = "relative flex flex-wrap items-center justify-between px-1 py-2 navbar-expand-lg mb-3" >
+                    <NavLink to= "/" 
+                    exact 
+                    activeClassName= "text-white-100"
+                    className= "inline-flex items-center py-6 px-3 mr-4 text-gray-800 hover:text-white text-4xl font-Verdana tracking-widest"
+                    > 
+                     &#60;DIV&#62;
+                    </NavLink>
+                   
+                    <NavLink to= "/project"
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white "
+                    activeClassName= "bg-red-300 text-white">
+                        UI UX Projects
+                    </NavLink>
+                    
+                    <NavLink to ="/post"
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white"
+                    activeClassName= "bg-red-300 text-white">
+                        HCI Research
+                    </NavLink>
+                   
+                    <NavLink to= "/about"
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white"
+                    activeClassName= "bg-red-300 text-white">
+                        About Me
+                    </NavLink>
+
+                    <NavLink to= "/resume"
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white"
+                    activeClassName= "bg-red-300 text-white">
+                        Resume
+                    </NavLink>
+
+                </nav>
+                <div className= "inline-flex py-3 px-3 my-6">
                     <SocialIcon url = "https://www.linkedin.com/in/divya-y-78a3a293/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}}></SocialIcon>
                     <SocialIcon url = "https://github.com/techsaco" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}}></SocialIcon>
                 </div>
             </div>
         </header>
+
                    
   
     )
