@@ -2,10 +2,7 @@ import React, { Component } from "react"
 import {NavLink} from "react-router-dom"
 import {SocialIcon} from "react-social-icons"
 import '../index.css';
-<<<<<<< HEAD
 import '../OnClick.js';
-=======
->>>>>>> a902b443d697ff3d4965c06ba307859d3368d202
 import { render } from "react-dom";
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link>
 
@@ -151,8 +148,4 @@ className= "inline-flex items-center py-6 px-3 mr-4 text-gray-800 hover:text-whi
             }
 }
 
-<<<<<<< HEAD
 export default NavBar;
-=======
-export default NavBar;
->>>>>>> a902b443d697ff3d4965c06ba307859d3368d202
