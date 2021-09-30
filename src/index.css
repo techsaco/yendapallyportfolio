@@ -1,11 +1,12 @@
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 @import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url('https://fonts.googleapis.com/css?family=Sofia');
 
-.cursive {
-  font-family: "Amatic SC", cursive;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;
+.fancy {
+  font-family: "Tangerine", serif;
+  font-size: 50px;
+  padding-left: 35px;
 }
 
 .prose img {

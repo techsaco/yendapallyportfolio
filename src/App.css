@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
 .App {
   text-align: center;
 }
@@ -55,4 +56,20 @@
   max-width: 100%;
   height: auto;
   max-height: 400px;
+}
+
+.classresp{
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px; /* fallback */
+  max-height: 42px; /* fallback */
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.parent {
+  position: relative;
+  top: 0.1px;
 }
