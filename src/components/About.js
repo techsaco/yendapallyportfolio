@@ -42,12 +42,12 @@ export default function About(){
         <div className="bg-gray-200 min-h-screen p-12">
         <div className="container shadow-lg mx-auto bg-red-100 rounded-lg">
           <div className="relative">
-            <div className="absolute h-full w-full flex items-center justify-center p-8">
+            <div className="relative h-full w-full flex items-center justify-center p-8">
               {/* Title Section */}
               <div className="rounded ">
-              <h9 className="fancy text-6xl text-black mb-4 text-right">
+              <h9 className="fancy sm:text-2 lg:text-6l text-black mb-4 align-text-center">
                   
-                  Hi! I'm Divya
+                Meet Divya
   
                 </h9>
                 
@@ -55,21 +55,18 @@ export default function About(){
                   <img
                     src={urlFor(author.authorImage).url()}
                     className="w-45 h-45"
-                    style={{ height: "250px" }}
+                    style={{ height: "200px" }}
                     alt="Author is Kap"
                   />
 
                 </div>
+           
+           
               </div>
             </div>
-            <img
-              className="w-full object-cover rounded-t"
-              src={image}
-              alt=""
-              style={{ height: "200px" }}
-            />
-          </div>
-          <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
+           
+
+            <div className="px-16 lg:px-48 py-1 lg:py-1 prose lg:prose-xl max-w-full">
             
             <BlockContent
               blocks={author.bio} 
@@ -77,6 +74,9 @@ export default function About(){
               dataset={sanityClient.clientConfig.dataset}
             />
           </div>
+
+          </div>
+ 
         </div>
       </div>
     );
