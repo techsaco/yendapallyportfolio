@@ -148,6 +148,12 @@ export default function SinleProject({blocks}) {
       </div>
     </div>
   )
+  
+       
+          
+          
+          
+          
   else{
     return (
       <div className="bg-gray-200 min-h-screen p-12">
