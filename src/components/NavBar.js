@@ -4,6 +4,7 @@ import {SocialIcon} from "react-social-icons"
 import '../index.css';
 import '../OnClick.js';
 import { render } from "react-dom";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link>
 
 class NavBar extends Component {
@@ -43,14 +44,14 @@ handleClickOutside = (event) => {
 
     
     return (
-        <header className= "bg-red-200">
+        <header className= "bg-red-800">
 
         
             <div class="md:hidden flex items-center">
             <div className = "container" ref={this.container}>
 	        <button class="outline-none mobile-menu-button" onClick = {this.handleButtonClick}>
                     <svg
-                        class="w-12 h- text-black-500"
+                        class="w-12 h- text-white-500"
                         x-show="!showMenu"
                         fill="none"
                         stroke-linecap="round"
@@ -91,7 +92,7 @@ handleClickOutside = (event) => {
             <NavLink to= "/" 
 exact 
 activeClassName= "text-white-100"
-className= "inline-flex items-center py-6 px-3 mr-4 text-gray-800 hover:text-white text-4xl font-Verdana tracking-widest"
+className= "inline-flex items-center py-6 px-3 mr-4 text-gray-100 hover:text-white text-4xl font-Verdana tracking-widest"
 > 
  &#60;DIV&#62;
 </NavLink>
@@ -102,39 +103,39 @@ className= "inline-flex items-center py-6 px-3 mr-4 text-gray-800 hover:text-whi
                     <NavLink to= "/" 
                     exact 
                     activeClassName= "text-white-100"
-                    className= "inline-flex items-center py-6 px-3 mr-4 text-gray-800 hover:text-white text-4xl font-Verdana tracking-widest"
+                    className= "inline-flex items-center py-6 px-3 mr-4 text-gray-100 hover:text-white text-4xl font-Verdana tracking-widest"
                     > 
                      &#60;DIV&#62;
                     </NavLink>
                    
                     <NavLink to= "/project"
-                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white "
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white "
                     activeClassName= "bg-red-300 text-white">
                         UI UX Projects
                     </NavLink>
                     
                     <NavLink to ="/post"
-                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white"
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
                     activeClassName= "bg-red-300 text-white">
                         HCI Research
                     </NavLink>
                    
                     <NavLink to= "/about"
-                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white"
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
                     activeClassName= "bg-red-300 text-white">
                         About Me
                     </NavLink>
 
                     <NavLink to= "/resume"
-                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-800 hover:text-white"
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
                     activeClassName= "bg-red-300 text-white">
                         Resume
                     </NavLink>
 
                 </nav>
                 <div className= "hidden md:block inline-flex py-3 px-3 my-6">
-                    <SocialIcon url = "https://www.linkedin.com/in/divya-y-78a3a293/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}}></SocialIcon>
-                    <SocialIcon url = "https://github.com/techsaco" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width:35}}></SocialIcon>
+                    <SocialIcon url = "https://www.linkedin.com/in/divya-y-78a3a293/" className="mr-4" target="_blank" fgColor="#fff" bgColor ="#000000" style={{height: 35, width:35}}></SocialIcon>
+                    <SocialIcon url = "https://github.com/techsaco" className="mr-4" target="_blank" fgColor="#fff" bgColor= "#000000" style={{height: 35, width:35}}></SocialIcon>
                 </div>
 
 

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
-import image from "../pinkmarble.jpg"
+import image from "../marb.png"
 import sanityClient from "../client.js";
 
 export default function Project(){
@@ -9,8 +9,8 @@ export default function Project(){
 
     useEffect(()=>{
         sanityClient
-            .fetch(`*[_type == "project"]{
-                title,
+            .fetch(`*[_type == "project"]|order(orderRank){
+                
                 id,
                 slug,
                 mainImage{
@@ -42,11 +42,7 @@ export default function Project(){
                                 className= "w-full h-full rounded-r object-cover absolute"
                             />
                             <span className= "block relative h-full flex justify-end items-end pr-4 pb-4">
-                                <h3 className = "text-white text-lg font-blog-bold px-5 py-1 bg-gray-900 text-black bg-opacity-75 rounded">
-
-                                    {project.title}
-                                    
-                                </h3>
+                              
                             </span>
                         </span>
                         </Link>

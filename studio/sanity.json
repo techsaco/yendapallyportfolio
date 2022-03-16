@@ -1,19 +1,19 @@
 {
   "root": true,
-  "project": {
-    "name": "studio"
-  },
   "api": {
     "projectId": "m7y80hkd",
     "dataset": "production"
+  },
+  "project": {
+    "name": "studio"
   },
   "plugins": [
     "@sanity/base",
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "@sanity/orderable-document-list"
   ],
   "env": {
     "development": {
@@ -26,6 +26,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
     }
   ]
 }

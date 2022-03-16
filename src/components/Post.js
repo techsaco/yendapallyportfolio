@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
-import image from "../pinkmarble.jpg"
+import image from "../marb.png"
 import sanityClient from "../client.js";
 export default function Post({blocks}){
 
@@ -11,7 +11,8 @@ export default function Post({blocks}){
 
     useEffect(()=>{
         sanityClient
-            .fetch(`*[_type == "post"]{
+    
+            .fetch(`*[_type == "post"]|order(orderRank){
                 title,
                 slug,
                 mainImage{
