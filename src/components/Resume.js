@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "../App.css";
 import "../index.css"
-import resume from "../Yendapally_Divya_Resume.pdf"
+import resume from "../Divya_Yendapally_Resume.pdf"
 import resumeImage from "../resumeimage.jpg"
 export default function Resume(){
     

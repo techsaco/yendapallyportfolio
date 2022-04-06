@@ -110,25 +110,25 @@ className= "inline-flex items-center py-6 px-3 mr-4 text-gray-100 hover:text-whi
                    
                     <NavLink to= "/project"
                     className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white "
-                    activeClassName= "bg-red-300 text-white">
+                    activeClassName= "bg-black text-white">
                         UI UX Projects
                     </NavLink>
                     
                     <NavLink to ="/post"
                     className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
-                    activeClassName= "bg-red-300 text-white">
+                    activeClassName= "bg-black text-white">
                         HCI Research
                     </NavLink>
                    
                     <NavLink to= "/about"
                     className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
-                    activeClassName= "bg-red-300 text-white">
+                    activeClassName= "bg-black text-white">
                         About Me
                     </NavLink>
 
                     <NavLink to= "/resume"
                     className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
-                    activeClassName= "bg-red-300 text-white">
+                    activeClassName= "bg-black text-white">
                         Resume
                     </NavLink>
 
