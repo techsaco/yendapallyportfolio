@@ -24,6 +24,7 @@ export default function About(){
                 `*[_type == "author"]{
                 name,
                 bio,
+                body,
                 "authorImage": image.asset -> url
                 }`) .then((data) => setAuthor(data[0]))
                     .catch(console.error);
@@ -40,14 +41,14 @@ export default function About(){
         
 
         <div className="bg-gray-200 min-h-screen p-12">
-        <div className="container shadow-lg mx-auto bg-red-100 rounded-lg">
+        <div className="container shadow-lg mx-auto bg-white rounded-lg">
           <div className="relative">
             <div className="relative h-full w-full flex items-center justify-center p-8">
               {/* Title Section */}
               <div className="rounded ">
               <h9 className="fancy sm:text-2 lg:text-6l text-black mb-4 align-text-center">
                   
-                Meet Divya
+                Welcome!
   
                 </h9>
                 
@@ -69,7 +70,7 @@ export default function About(){
             <div className="px-16 lg:px-48 py-1 lg:py-1 prose lg:prose-xl max-w-full">
             
             <BlockContent
-              blocks={author.bio} 
+              blocks={author.body}
               projectId={sanityClient.clientConfig.projectId}
               dataset={sanityClient.clientConfig.dataset}
             />
