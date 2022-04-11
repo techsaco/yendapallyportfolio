@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import "../App.css";
 import "../index.css"
-import resume from "../Divya_Yendapally_Resume.pdf"
-import resumeImage from "../Divya_Yendapally_Resume-1.png"
+import resume from "../Resume_Divya_Yendapally.pdf"
+import resumeImage from "../Resume_Divya_Yendapally-1.png"
 export default function Resume(){
     
     
