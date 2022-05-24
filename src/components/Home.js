@@ -44,6 +44,20 @@ export default function Home(){
         
             <div className = "body">
             <img src= {hiimage} alt= "Designedbydivy" className="relative flex object-cover w-full h-full"/>
+            <div class="divider"><span></span><span>
+            <h4 class="wordCarousel">
+    <h3>Hi, I am  </h3>
+    <div>
+       
+        <ul class="flip3">
+            <li>Developer</li>
+            <li>Designer</li>
+            <li>Divya</li>
+        </ul>
+    </div>
+</h4>
+              </span><span></span></div>
+            
             <img src= {icons} alt= "Designedbydivy" className="relative flex object-cover w-full h-full" />
            <div>
            <div class="divider"><span></span><span>UX Research</span><span></span></div>
