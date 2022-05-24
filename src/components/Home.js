@@ -1,10 +1,13 @@
 import React from "react"
-import image from "../updated.png"
+import image from "../Albert Einstein.png"
 import bgimagedark from "../darkthememarble.png"
 import bg1 from "../1.png"
 import bg2 from "../red1.png"
 import bg3 from "../3.png"
 import bg4 from "../red2.png"
+import bg5 from "../items.png"
+import bg6 from "../uic.png"
+import icons from "../icon.png"
 import "../index.css"
 import { createMuiTheme, makeStyles } from "@material-ui/core/styles";
 import Brightness7Icon from '@mui/icons-material/Brightness7';
@@ -12,6 +15,9 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { useState } from "react";
 import { ThemeProvider } from "@emotion/react"
 import IconButton from "@material-ui/core/IconButton";
+import Project from "./Project"
+import Post from "./Post"
+import About from "./About"
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link>
 const useStyles = makeStyles(theme => ({
@@ -38,16 +44,23 @@ export default function Home(){
         
             <div className = "body">
             <img src= {hiimage} alt= "Designedbydivy" className="relative flex object-cover w-full h-full"/>
-            <br></br>
+            <img src= {icons} alt= "Designedbydivy" className="relative flex object-cover w-full h-full" />
+           <div>
+           <div class="divider"><span></span><span>UX Research</span><span></span></div>
+           
+          
+            <Post/>
+
+            <div class="divider"><span></span><span>UI UX Design </span><span></span></div>
+           
+
+            <Project/>
+            <div class="divider"><span></span><span>About Me </span><span></span></div>
+            <About/>
+            </div>
             <section className= "container mx-auto">
-            <img src= {bg1} alt= "Designedbydivy" className="relative flex object-cover w-full h-full" />
-            <br></br>
-            <img src= {bg2} alt= "Designedbydivy" className="relative flex object-cover w-full h-full"/>
-            <br></br>
-            <img src= {bg3} alt= "Designedbydivy" className="relative flex object-cover w-full h-full"/>
-            <br></br>
-            <img src= {bg4} alt= "Designedbydivy" className="relative flex object-cover w-full h-full"/>
-            
+           
+
             </section>
             <section className = "relative flex justify-center ">
             

@@ -28,15 +28,15 @@ export default function Post({blocks}){
     }, []);
     return (
         <main>
-            <img src= {image} alt= "Designedbydivy" className="absolute object-cover w-full h-full"/>
+            
             <section className= "container mx-auto">
-                <h1 className= "text-5xl flex justify-center cursive"> Blog Post </h1>
-                <h2 className = "text-lg text-gray-600 flex justify-center mb-12">Welcome to blogs!</h2>
+                <h1 className= "text-5xl flex justify-center cursive">  </h1>
+                <h2 className = "text-lg text-gray-600 flex justify-center mb-12"></h2>
                 <div className= "grid md: grid-cols-2 lg:grid-cols-3 gap-8">
                    {postData && postData.map((post,index)=>(
                     <article>
                         <Link to= {"/post/" + post.slug.current} key={post.slug.current}>
-                        <span className= "block h-64 relative rounded shadow leading-snug bg-white border-l -8 border-green-400"
+                        <span className= "block h-64 relative rounded shadow leading-snug bg-white border-l -8 border-gray-100"
                         key={index}>
                             <img
                                 src= {post.mainImage.asset.url}
@@ -45,12 +45,7 @@ export default function Post({blocks}){
                             />
                             
 
-                            <span className= "block relative h-full flex justify-end items-end pr-4 pb-4">
-                                <h3 className = "text-white text-lg font-blog-bold px-5 py-1 bg-gray-900 text-black bg-opacity-75 rounded">
-                                    {post.title}
-                                    
-                                </h3>
-                            </span>
+                            
                         </span>
                         </Link>
                         

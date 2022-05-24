@@ -49,31 +49,14 @@ export default function OnePost() {
         <div className="relative">
           <div className="absolute h-full w-full items-center flex justify-center p-8">
             {/* Title Section */}
-            <div className="bg-white bg-opacity-75 rounded p-12">
-              <h2 className="font-verdana text-3xl lg:text-2xl mb-4">
-                {postData.title}
-              </h2>
-              <div className="flex justify-center text-gray-800">
-
-
-                
-                <img
-                  src={urlFor(postData.authorImage).url()}
-                  className="w-10 h-10 rounded-full"
-                  alt="Author is Kap"
-                />
-                <h4 className="cursive flex items-center pl-2 text-2xl">
-                  {postData.name}
-                  
-                </h4>
-              </div>
-            </div>
+             
+           
           </div>
           <img
             className="w-full object-cover rounded-t"
             src={urlFor(postData.mainImage).url()}
             alt=""
-            style={{ height: "400px" }}
+            style={{ height: "200px" }}
           />
          
         </div>
@@ -105,28 +88,19 @@ export default function OnePost() {
   else{
     return (
       <div className="bg-gray-200 min-h-screen p-12">
-        <div className="container shadow-lg mx-auto bg-green-100 rounded-lg">
+        <div className="container shadow-lg mx-auto bg-gray-100 rounded-lg">
           <div className="relative">
             <div className="absolute h-full w-full flex items-center justify-center p-8">
               {/* Title Section */}
-              <div className="bg-white bg-opacity-75 rounded p-12">
-                <h2 className="font-verdana text-3xl lg:text-2xl mb-4">
-                  {postData.title}
-                </h2>
+           
+              
                 <div className="flex justify-center text-gray-800">
   
   
                   
-                  <img
-                    src={urlFor(postData.authorImage).url()}
-                    className="w-10 h-10 rounded-full"
-                    alt="Author is Kap"
-                  />
-                  <h4 className="cursive flex items-center pl-2 text-2xl">
-                    {postData.name}
-                    
-                  </h4>
-                </div>
+                
+                  
+                
               </div>
             </div>
             <img

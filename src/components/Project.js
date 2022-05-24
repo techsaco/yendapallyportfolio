@@ -26,15 +26,15 @@ export default function Project(){
     }, []);
     return (
         <main>
-            <img src= {image} alt= "Designedbydivy" className="absolute object-cover w-full h-full"/>
+           
             <section className= "container mx-auto">
-                <h1 className= "text-5xl flex justify-center cursive"> Blog Post </h1>
-                <h2 className = "text-lg text-gray-600 flex justify-center mb-12">Welcome to blogs!</h2>
+                <h1 className= "text-5xl flex justify-center cursive">   </h1>
+                <h2 className = "text-lg text-gray-600 flex justify-center mb-12"> </h2>
                 <div className= "grid md: grid-cols-2 lg:grid-cols-3 gap-8">
                    {projectData && projectData.map((project,index)=>(
                     <article>
                         <Link to= {"/project/" + project.slug.current} key={project.slug.current}>
-                        <span className= "block h-64 relative rounded shadow leading-snug bg-white border-l -8 border-black"
+                        <span className= "block h-64 relative rounded shadow leading-snug bg-white border-l -8 border-gray-100"
                         key={index}>
                             <img
                                 src= {project.mainImage.asset.url}

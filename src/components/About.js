@@ -40,7 +40,7 @@ export default function About(){
 
         
 
-        <div className="bg-gray-200 min-h-screen p-12">
+        <div className="bg-white min-h-screen p-12">
         <div className="container shadow-lg mx-auto bg-white rounded-lg">
           <div className="relative">
             <div className="relative h-full w-full flex items-center justify-center p-8">
@@ -67,7 +67,7 @@ export default function About(){
             </div>
            
 
-            <div className="px-16 lg:px-48 py-1 lg:py-1 prose lg:prose-xl max-w-full">
+            <div className="heading-0 px-16 lg:px-48 py-1 lg:py-1 prose lg:prose-xl max-w-full">
             
             <BlockContent
               blocks={author.body}

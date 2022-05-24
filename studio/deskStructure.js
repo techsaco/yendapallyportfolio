@@ -8,6 +8,7 @@ export default () =>
       // Minimum required configuration
       orderableDocumentListDeskItem({type: 'post', title: 'post'}),
       orderableDocumentListDeskItem({type: 'project', title: 'project'}),
+      orderableDocumentListDeskItem({type: 'author', title: 'author'}),
      
 
     ])

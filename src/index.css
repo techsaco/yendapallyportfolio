@@ -2,11 +2,18 @@
 @import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url('https://fonts.googleapis.com/css?family=Sofia');
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 
 .fancy {
   font-family: "Tangerine", serif;
   font-size: 50px;
   padding-left: 35px;
+}
+
+.notfancy {
+  font-family: "Sofia", serif;
+  font-size: 50px;
+  padding-left: 400px;
 }
 
 .prose img {
@@ -53,6 +60,126 @@ li:hover {
  
 }
 
-body {
-  background-image: url(./marb.png);
- }
+.divider {								/* minor cosmetics */
+  display: table; 
+  font-size: 24px; 
+  text-align: center; 
+  width: 75%; 						/* divider width */
+  margin: 40px auto;					/* spacing above/below */
+  font-family: 'Roboto Slab', serif;
+		font-size: 1.5em;
+		letter-spacing: 0.08em;
+		font-weight: 300;
+		color: #991b1b;
+		text-shadow: 0 1px 1px #FFFFFF;
+		text-transform: uppercase;
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+  width: 50%;
+  top: 13px;							/* adjust vertical align */
+  -moz-background-size: 100% 2px; 	/* line width */
+  background-size: 100% 2px; 			/* line width */
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+  background-image: -webkit-linear-gradient(180deg, transparent, #000);
+  background-image: -moz-linear-gradient(180deg, transparent, #000);
+  background-image: -o-linear-gradient(180deg, transparent, #000);
+  background-image: linear-gradient(90deg, transparent, #000);
+}
+.divider span:nth-child(2) {
+  color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+  background-image: -webkit-linear-gradient(180deg, #000, transparent);
+  background-image: -moz-linear-gradient(180deg, #000, transparent);
+  background-image: -o-linear-gradient(180deg, #000, transparent);
+  background-image: linear-gradient(90deg, #000, transparent);
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+.heading-1 {
+		font-family: 'Roboto Slab', serif;
+		font-size: 1.5em;
+		letter-spacing: 0.08em;
+		font-weight: 300;
+		color: #991b1b;
+		text-shadow: 0 1px 1px #FFFFFF;
+		text-transform: uppercase;
+}
+.heading-0 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2em;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  color: #000;
+  text-shadow: 0 1px 1px #FFFFFF;
+  
+}
+.heading-2 {
+		font-family: 'Roboto Slab', serif;
+		font-size: 1.5em;
+		letter-spacing: 0.08em;
+		font-weight: 300;
+		color: #1589FF;
+		text-shadow: 0 1px 1px #FFFFFF;
+		text-transform: uppercase;
+}
+
+.heading-3 {
+		font-family: 'Roboto Slab', serif;
+		font-size: 1.5em;
+		letter-spacing: 0.08em;
+		font-weight: 300;
+		color: #FF00FF;
+		text-shadow: 0 1px 1px #FFFFFF;
+		text-transform: uppercase;
+}
+
+.divider-1 {
+		border-bottom: 1px solid #FFF;
+		background-color: #DADADA;
+		height: 1px;
+		margin: 0.5em 0px 1.5em;
+}
+
+.divider-1 span {
+		display: block;
+		width: 190px;
+		height: 1px;
+		background-color: #991b1b;
+}
+
+.divider-2 {
+		border-bottom: 1px solid #FFF;
+		background-color: #DADADA;
+		height: 1px;
+		margin: 0.5em 0px 1.5em;
+}
+
+.divider-2 span {
+		display: block;
+		width: 50px;
+		height: 1px;
+		background-color: #1589FF;
+}
+
+.divider-3 {
+		border-bottom: 1px solid #FFF;
+		background-color: #DADADA;
+		height: 1px;
+		margin: 0.5em 0px 1.5em;
+}
+
+.divider-3 span {
+		display: block;
+		width: 50px;
+		height: 1px;
+		background-color: #FF00FF;
+}

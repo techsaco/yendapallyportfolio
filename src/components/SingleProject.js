@@ -164,7 +164,7 @@ export default function SinleProject({blocks}) {
               className="w-full object-cover rounded-t"
               src={urlFor(projectData.mainImage).url()}
               alt=""
-              style={{ height: "400px" }}
+              style={{ height: "350px" }}
             />
           </div>
           <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">

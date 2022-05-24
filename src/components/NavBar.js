@@ -5,8 +5,7 @@ import '../index.css';
 import '../OnClick.js';
 import { render } from "react-dom";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link>
-
+<link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet'></link>
 class NavBar extends Component {
 container = React.createRef();
 state = {
@@ -44,7 +43,7 @@ handleClickOutside = (event) => {
 
     
     return (
-        <header className= "bg-red-800">
+        <header className= "bg-red-800" height= "100" >
 
         
             <div class="md:hidden flex items-center">
@@ -109,26 +108,26 @@ className= "inline-flex items-center py-6 px-3 mr-4 text-gray-100 hover:text-whi
                     </NavLink>
                    
                     <NavLink to= "/project"
-                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white "
-                    activeClassName= "bg-black text-white">
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-gray-900 "
+                    activeClassName= "bg-red-800 text-gray-900">
                         UI UX Projects
                     </NavLink>
                     
                     <NavLink to ="/post"
-                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
-                    activeClassName= "bg-black text-white">
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-gray-900"
+                    activeClassName= "bg-red-800 text-gray-900">
                         HCI Research
                     </NavLink>
                    
                     <NavLink to= "/about"
-                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
-                    activeClassName= "bg-black text-white">
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-gray-900"
+                    activeClassName= "bg-red-800 text-gray-900">
                         About Me
                     </NavLink>
 
                     <NavLink to= "/resume"
-                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-white"
-                    activeClassName= "bg-black text-white">
+                    className= "inline-flex items-center py-3 px-3 my-6 rounded text-gray-100 hover:text-gray-900"
+                    activeClassName= "bg-red-800 text-gray-900">
                         Resume
                     </NavLink>
 

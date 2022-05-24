@@ -2,12 +2,7 @@
 .App {
   text-align: center;
 }
-.bg_image{
-  background-image: url('./marb.png');
-  background-size: cover;
-  height: auto;
-  
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
