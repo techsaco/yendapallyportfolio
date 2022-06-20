@@ -90,7 +90,7 @@ export default function SinleProject({blocks}) {
   
   else if (projectData.title == ("Recover- Creating a more Sustainable Future")) return (
     <div className="bg-gray-200 min-h-screen p-12">
-      <div className="container shadow-lg mx-auto bg-green-100 rounded-lg">
+      <div className="container shadow-lg mx-auto bg-white-100 rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
             {/* Title Section */}
@@ -141,7 +141,7 @@ export default function SinleProject({blocks}) {
   else{
     return (
       <div className="bg-gray-200 min-h-screen p-12">
-        <div className="container shadow-lg mx-auto bg-green-100 rounded-lg">
+        <div className="container shadow-lg mx-auto bg-white-100 rounded-lg">
           <div className="relative">
             <div className="absolute h-full w-full flex items-center justify-center p-8">
               {/* Title Section */}
