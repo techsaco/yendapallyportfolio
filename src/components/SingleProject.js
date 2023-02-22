@@ -77,7 +77,7 @@ export default function SinleProject({blocks}) {
           />
         
              
-        <YouTube videoId= {projectData.title1}> </YouTube>
+        
           
         
           
@@ -122,7 +122,7 @@ export default function SinleProject({blocks}) {
           />
         
              
-        <YouTube videoId= {projectData.title1}> </YouTube>
+        
           
         
           
