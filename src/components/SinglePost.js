@@ -44,7 +44,7 @@ export default function OnePost() {
 
   
   if (postData.title == ("Accessibility Design towards the Mental Health Sector, specifically Post Traumatic Stress Disorder (PTSD)")) return (
-    <div className="bg-gray-200 min-h-screen p-12">
+    <div className="bg-white-200 min-h-screen p-12">
       <div className="container shadow-lg mx-auto bg-white rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full items-center flex justify-center p-8">
@@ -87,8 +87,8 @@ export default function OnePost() {
   );
   else{
     return (
-      <div className="bg-gray-200 min-h-screen p-12">
-        <div className="container shadow-lg mx-auto bg-gray-100 rounded-lg">
+      <div className="bg-white-200 min-h-screen p-12">
+        <div className="container shadow-lg mx-auto bg-white-100 rounded-lg">
           <div className="relative">
             <div className="absolute h-full w-full flex items-center justify-center p-8">
               {/* Title Section */}

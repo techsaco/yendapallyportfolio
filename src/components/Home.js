@@ -60,15 +60,16 @@ export default function Home(){
             
             <img src= {icons} alt= "Designedbydivy" className="relative flex object-cover w-full h-full" />
            <div>
-           <div class="divider"><span></span><span>UX Research</span><span></span></div>
            
-          
-            <Post/>
 
             <div class="divider"><span></span><span>UI UX Design </span><span></span></div>
            
 
             <Project/>
+            <div class="divider"><span></span><span>UX Research</span><span></span></div>
+           
+          
+           <Post/>
             <div class="divider"><span></span><span>About Me </span><span></span></div>
             <About/>
             </div>

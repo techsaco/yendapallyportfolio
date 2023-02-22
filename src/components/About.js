@@ -5,7 +5,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import "../App.css";
 import "../index.css";
 import image from "../pinkmarble.jpg"
-import resume from "../Yendapally_Divya_Resume.pdf"
+import resume from "../divyayendapallyresume.pdf"
 
 
 

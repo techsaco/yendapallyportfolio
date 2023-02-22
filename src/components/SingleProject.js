@@ -4,7 +4,7 @@ import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import YouTube from "react-youtube";
-
+import giphy from '../giphy.gif'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -46,7 +46,7 @@ export default function SinleProject({blocks}) {
   
   
   if (projectData.title == ("T.I.M.E")) return (
-    <div className="bg-gray-200 min-h-screen p-12">
+    <div className="bg-white-200 min-h-screen p-12">
       <div className="container shadow-lg mx-auto bg-white-100 rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
@@ -63,7 +63,7 @@ export default function SinleProject({blocks}) {
             className="w-full object-cover rounded-t"
             src={urlFor(projectData.mainImage).url()}
             alt=""
-            style={{ height: "500px" }}
+            style={{ height: "200px" }}
           />
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
@@ -79,7 +79,7 @@ export default function SinleProject({blocks}) {
              
         <YouTube videoId= {projectData.title1}> </YouTube>
           
-          
+        
           
           
           
@@ -88,8 +88,8 @@ export default function SinleProject({blocks}) {
     </div>
   )
   
-  else if (projectData.title == ("Recover- Creating a more Sustainable Future")) return (
-    <div className="bg-gray-200 min-h-screen p-12">
+  else if (projectData.title == ("Spark - Fostering Spontaneous Conversation in a Workplace")) return (
+    <div className="bg-white-200 min-h-screen p-12">
       <div className="container shadow-lg mx-auto bg-white-100 rounded-lg">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
@@ -108,13 +108,13 @@ export default function SinleProject({blocks}) {
             className="w-full object-cover rounded-t"
             src={urlFor(projectData.mainImage).url()}
             alt=""
-            style={{ height: "400px" }}
+            style={{ height: "500px" }}
           />
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
           {projectData.videoLink}
-          
-          
+          <h4> Spark: Fostering Spontaneous Conversations in a Remote Workplace </h4>
+          <img src={giphy} alt="loading..." />
           <BlockContent
             blocks={projectData.body}
             projectId={sanityClient.clientConfig.projectId}
@@ -124,7 +124,7 @@ export default function SinleProject({blocks}) {
              
         <YouTube videoId= {projectData.title1}> </YouTube>
           
-          
+        
           
           
           
@@ -140,7 +140,7 @@ export default function SinleProject({blocks}) {
           
   else{
     return (
-      <div className="bg-gray-200 min-h-screen p-12">
+      <div className="bg-white-200 min-h-screen p-12">
         <div className="container shadow-lg mx-auto bg-white-100 rounded-lg">
           <div className="relative">
             <div className="absolute h-full w-full flex items-center justify-center p-8">
@@ -164,7 +164,7 @@ export default function SinleProject({blocks}) {
               className="w-full object-cover rounded-t"
               src={urlFor(projectData.mainImage).url()}
               alt=""
-              style={{ height: "350px" }}
+              style={{ height: "500px" }}
             />
           </div>
           <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
